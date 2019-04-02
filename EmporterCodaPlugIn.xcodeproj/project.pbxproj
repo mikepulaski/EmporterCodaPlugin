@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A65E2E95224FF5C100532B5C /* libEmporterKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A65E2E8E224FF5B500532B5C /* libEmporterKit.a */; };
+		A66369022246B52100F506AE /* EmporterCodaPlugIn.m in Sources */ = {isa = PBXBuildFile; fileRef = A66369012246B52100F506AE /* EmporterCodaPlugIn.m */; };
+		A6990CC122470C9F0076C2B6 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6990CC022470C9F0076C2B6 /* AppKit.framework */; };
+		A6990CC322470CA60076C2B6 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6990CC222470CA60076C2B6 /* ScriptingBridge.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A65E2E8D224FF5B500532B5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A65E2E87224FF5B500532B5C /* EmporterKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A6FD1774224AB1DA00F3CB9B;
+			remoteInfo = EmporterKit;
+		};
+		A65E2E8F224FF5B500532B5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A65E2E87224FF5B500532B5C /* EmporterKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A6FD1789224AB39800F3CB9B;
+			remoteInfo = EmporterKitTests;
+		};
+		A65E2E91224FF5B500532B5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A65E2E87224FF5B500532B5C /* EmporterKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A6FD1799224AB49500F3CB9B;
+			remoteInfo = EmporterKitTestHost;
+		};
+		A65E2E93224FF5BD00532B5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A65E2E87224FF5B500532B5C /* EmporterKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A6FD1773224AB1DA00F3CB9B;
+			remoteInfo = EmporterKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A65E2E87224FF5B500532B5C /* EmporterKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EmporterKit.xcodeproj; path = EmporterKit/EmporterKit.xcodeproj; sourceTree = "<group>"; };
+		A66368F52246B2E800F506AE /* Emporter.codaplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Emporter.codaplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		A66368F82246B2E800F506AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A66368FE2246B38000F506AE /* CodaPlugInsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodaPlugInsController.h; sourceTree = "<group>"; };
+		A66369012246B52100F506AE /* EmporterCodaPlugIn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmporterCodaPlugIn.m; sourceTree = "<group>"; };
+		A6990CC022470C9F0076C2B6 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		A6990CC222470CA60076C2B6 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A66368F22246B2E800F506AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A65E2E95224FF5C100532B5C /* libEmporterKit.a in Frameworks */,
+				A6990CC322470CA60076C2B6 /* ScriptingBridge.framework in Frameworks */,
+				A6990CC122470C9F0076C2B6 /* AppKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A65E2E67224FF5A100532B5C /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				A65E2E87224FF5B500532B5C /* EmporterKit.xcodeproj */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		A65E2E88224FF5B500532B5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A65E2E8E224FF5B500532B5C /* libEmporterKit.a */,
+				A65E2E90224FF5B500532B5C /* EmporterKitTests.xctest */,
+				A65E2E92224FF5B500532B5C /* EmporterKitTestHost.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A66368EC2246B2E800F506AE = {
+			isa = PBXGroup;
+			children = (
+				A66368F72246B2E800F506AE /* EmporterCodaPlugIn */,
+				A65E2E67224FF5A100532B5C /* Vendor */,
+				A66368F62246B2E800F506AE /* Products */,
+				A6990CBF22470C9F0076C2B6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A66368F62246B2E800F506AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A66368F52246B2E800F506AE /* Emporter.codaplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A66368F72246B2E800F506AE /* EmporterCodaPlugIn */ = {
+			isa = PBXGroup;
+			children = (
+				A66368FE2246B38000F506AE /* CodaPlugInsController.h */,
+				A66369012246B52100F506AE /* EmporterCodaPlugIn.m */,
+				A66368F82246B2E800F506AE /* Info.plist */,
+			);
+			path = EmporterCodaPlugIn;
+			sourceTree = "<group>";
+		};
+		A6990CBF22470C9F0076C2B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6990CC222470CA60076C2B6 /* ScriptingBridge.framework */,
+				A6990CC022470C9F0076C2B6 /* AppKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A66368F42246B2E800F506AE /* EmporterCodaPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A66368FB2246B2E800F506AE /* Build configuration list for PBXNativeTarget "EmporterCodaPlugin" */;
+			buildPhases = (
+				A66368F12246B2E800F506AE /* Sources */,
+				A66368F22246B2E800F506AE /* Frameworks */,
+				A66368F32246B2E800F506AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A65E2E94224FF5BD00532B5C /* PBXTargetDependency */,
+			);
+			name = EmporterCodaPlugin;
+			productName = EmporterCodaPlugin;
+			productReference = A66368F52246B2E800F506AE /* Emporter.codaplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A66368ED2246B2E800F506AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Young Dynasty";
+				TargetAttributes = {
+					A66368F42246B2E800F506AE = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = A66368F02246B2E800F506AE /* Build configuration list for PBXProject "EmporterCodaPlugIn" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A66368EC2246B2E800F506AE;
+			productRefGroup = A66368F62246B2E800F506AE /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A65E2E88224FF5B500532B5C /* Products */;
+					ProjectRef = A65E2E87224FF5B500532B5C /* EmporterKit.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				A66368F42246B2E800F506AE /* EmporterCodaPlugin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A65E2E8E224FF5B500532B5C /* libEmporterKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libEmporterKit.a;
+			remoteRef = A65E2E8D224FF5B500532B5C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A65E2E90224FF5B500532B5C /* EmporterKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = EmporterKitTests.xctest;
+			remoteRef = A65E2E8F224FF5B500532B5C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A65E2E92224FF5B500532B5C /* EmporterKitTestHost.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = EmporterKitTestHost.app;
+			remoteRef = A65E2E91224FF5B500532B5C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A66368F32246B2E800F506AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A66368F12246B2E800F506AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A66369022246B52100F506AE /* EmporterCodaPlugIn.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A65E2E94224FF5BD00532B5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EmporterKit;
+			targetProxy = A65E2E93224FF5BD00532B5C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A66368F92246B2E800F506AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A66368FA2246B2E800F506AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A66368FC2246B2E800F506AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = EEQTQC5N2L;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				HEADER_SEARCH_PATHS = "Vendor/EmporterKit/**";
+				INFOPLIST_FILE = EmporterCodaPlugin/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = net.youngdynasty.EmporterCodaPlugin;
+				PRODUCT_NAME = Emporter;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = codaplugin;
+			};
+			name = Debug;
+		};
+		A66368FD2246B2E800F506AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = EEQTQC5N2L;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				HEADER_SEARCH_PATHS = "Vendor/EmporterKit/**";
+				INFOPLIST_FILE = EmporterCodaPlugin/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = net.youngdynasty.EmporterCodaPlugin;
+				PRODUCT_NAME = Emporter;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = codaplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A66368F02246B2E800F506AE /* Build configuration list for PBXProject "EmporterCodaPlugIn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A66368F92246B2E800F506AE /* Debug */,
+				A66368FA2246B2E800F506AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A66368FB2246B2E800F506AE /* Build configuration list for PBXNativeTarget "EmporterCodaPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A66368FC2246B2E800F506AE /* Debug */,
+				A66368FD2246B2E800F506AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A66368ED2246B2E800F506AE /* Project object */;
+}
