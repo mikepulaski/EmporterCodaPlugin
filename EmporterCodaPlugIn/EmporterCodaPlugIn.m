@@ -95,10 +95,24 @@
     // Determine user consent when configuring a tunnel as we need consent for our other menu actions. The other
     // actions depend on the project being configured, so it makes sense to do it here.
     [self determineUserConsentWithCompletionHandler:^{
+        NSError *error = nil;
+        
         if (self.consentType == EmporterUserConsentTypeGranted) {
-            [emporter configureTunnelWithURL:siteURL];
-        } else {
-            [self showConsentErrorAlert];
+            [emporter configureTunnelWithURL:siteURL error:&error];
+            
+            if (error == nil) {
+                return;
+            } else {
+                error = nil; // fall through
+            }
+        }
+        
+        // If we don't have consent, fall-back to less-powerful API which doesn't need permissions
+        [[NSWorkspace sharedWorkspace] openURLs:@[siteURL] withApplicationAtURL:emporter.bundleURL options:0 configuration:@{} error:&error];
+        
+        if (error != nil) {
+            NSLog(@"Could not configure URL: %@", error);
+            NSBeep();
         }
     }];
 }
@@ -163,7 +177,7 @@
     NSString *urlString = nil;
     
     if (siteURL != nil && emporter != nil && [emporter isRunning] && self.consentType == EmporterUserConsentTypeGranted) {
-        EmporterTunnel *tunnel = [emporter tunnelForURL:siteURL];
+        EmporterTunnel *tunnel = [emporter tunnelForURL:siteURL error:nil];
         if (tunnel != nil) {
             urlString = tunnel.remoteUrl;
         }
