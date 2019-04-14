@@ -50,6 +50,7 @@
 		A66368F82246B2E800F506AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A66368FE2246B38000F506AE /* CodaPlugInsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodaPlugInsController.h; sourceTree = "<group>"; };
 		A66369012246B52100F506AE /* EmporterCodaPlugIn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmporterCodaPlugIn.m; sourceTree = "<group>"; };
+		A677ED9722636B40009D4DCD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A6990CC022470C9F0076C2B6 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		A6990CC222470CA60076C2B6 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -89,6 +90,7 @@
 		A66368EC2246B2E800F506AE = {
 			isa = PBXGroup;
 			children = (
+				A677ED9722636B40009D4DCD /* README.md */,
 				A66368F72246B2E800F506AE /* EmporterCodaPlugIn */,
 				A65E2E67224FF5A100532B5C /* Vendor */,
 				A66368F62246B2E800F506AE /* Products */,
@@ -132,7 +134,6 @@
 			buildPhases = (
 				A66368F12246B2E800F506AE /* Sources */,
 				A66368F22246B2E800F506AE /* Frameworks */,
-				A66368F32246B2E800F506AE /* Resources */,
 			);
 			buildRules = (
 			);
@@ -205,16 +206,6 @@
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
-
-/* Begin PBXResourcesBuildPhase section */
-		A66368F32246B2E800F506AE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A66368F12246B2E800F506AE /* Sources */ = {
@@ -361,7 +352,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = net.youngdynasty.EmporterCodaPlugin;
 				PRODUCT_NAME = Emporter;
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				WRAPPER_EXTENSION = codaplugin;
 			};
 			name = Debug;
@@ -380,7 +371,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = net.youngdynasty.EmporterCodaPlugin;
 				PRODUCT_NAME = Emporter;
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				WRAPPER_EXTENSION = codaplugin;
 			};
 			name = Release;
