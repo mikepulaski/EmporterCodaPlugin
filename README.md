@@ -16,6 +16,6 @@ BSD 3 Clause. See [LICENSE](/LICENSE).
 
 ---
 
-Built using [EmporterKit](https://github.com/mikepulaski/EmporterKit).
+Built using [EmporterKit](https://github.com/youngdynasty/EmporterKit).
 
 (c) 2019 [Young Dynasty](https://youngdynasty.net)
